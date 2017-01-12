@@ -8,14 +8,37 @@
 	<link href = "styles/main.css" rel = "stylesheet" type = "text/css">
 	
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type = "text/css">
+
+	<script
+	  src="http://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+
+  	<script type="text/javascript" src="scripts/app.js"></script>
+
 </head>
 
-<body>
+<body class="js-menu-close">
+	<div id="sidebar-wrapper">
+	    <div id="close-btn" class="js-menu-close"><img src="img/icons/icons/x.svg"></div>
+		 <h2>Spike</h2>
+		 <h2>Spiegel</h2> 
+		 <div class="sidebar-links">
+	     <a href="#about"> About </a> 
+	     <a href="#gallery"> Gallery </a>
+	     <a href="#contact"> Contact </a>
+	   </div>
+	</div>
+
 	<div id = "intro" class = "container-fluid hero landscape">
  		<h1> Spike Spiegel </h1>
  		<h5> Freelance Photographer </h5>
  		<a <button type="button" class="cta" href="#gallery"> Gallery</button> </a>
+      <div id="hamburger" class="js-menu-open">
+      <img src="img/icons/icons/menu.svg">
+      </div>
 	</div>
+
 
 	<div id = "about" class = "container hero">
 		<h2> About Me </h2>
