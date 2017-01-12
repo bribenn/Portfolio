@@ -2,6 +2,11 @@ $site-teal: #00E2AC;
 $site-light-blue: #00CFFF;
 $site-light-grey: #EEFDF9;
 $text-shadow-color: rgba(0, 0, 0, 0.25);
+$light-blue: #00CFFF;
+
+/*div {
+	border: solid red 5px;
+}*/
 
 .hero {
 	font-family: "Roboto", serif;
@@ -120,7 +125,7 @@ $text-shadow-color: rgba(0, 0, 0, 0.25);
 
 /*.contact-btn:hover {
 	color: white;
-	background-color: #00CFFF;
+	background-color: $light-blue;
 }*/
 
 #social {
@@ -196,5 +201,77 @@ $text-shadow-color: rgba(0, 0, 0, 0.25);
 			max-width: 992px;
 			max-height: 900px;
 		}
+	}
+}
+
+#sidebar-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 0px;
+	height: 100%;
+	padding-top: 50px;
+	position: fixed;
+	font-family: "Roboto", serif;
+	color: white;
+	background-color: black;
+	z-index: 2;
+	overflow: hidden;
+	transition: all 0.5s ease;
+	h2 {
+		font-size: 40px;
+		line-height: 40px;
+		margin: 4px;
+		padding: 0px;
+	}
+	a {
+		font-size: 24px;
+		color: white;
+		margin-left: 10px;
+	}
+	&.open {
+		width: 320px;
+	}
+	.sidebar-links {
+		display: flex;
+		margin-top: 20px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#close-btn {
+		margin-left: 30px;
+		margin-top: 10px;
+		align-self: flex-start;
+		color: white;
+		cursor: pointer;
+		&:hover {
+			opacity: 0.5;
+		}
+		img {
+			height: 30px;
+			width: 30px;
+		}
+	}
+}
+
+#hamburger {
+	display: flex;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	height: 34px;
+	width: 40px;
+	top: 20px;
+	left: 30px;
+	border-radius: 4px;
+	background-color: black;
+	z-index: 1;
+	&:hover {
+		background-color: $light-blue;
+	}
+	img {
+		height: 30px;
+		width: 30px;
 	}
 }

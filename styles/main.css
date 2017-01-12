@@ -1,3 +1,6 @@
+/*div {
+	border: solid red 5px;
+}*/
 .hero {
   font-family: "Roboto", serif;
   text-align: center;
@@ -87,7 +90,7 @@
 
 /*.contact-btn:hover {
 	color: white;
-	background-color: #00CFFF;
+	background-color: $light-blue;
 }*/
 #social {
   padding: 20px; }
@@ -145,5 +148,65 @@
       width: 100%;
       max-width: 992px;
       max-height: 900px; } }
+#sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 0px;
+  height: 100%;
+  padding-top: 50px;
+  position: fixed;
+  font-family: "Roboto", serif;
+  color: white;
+  background-color: black;
+  z-index: 2;
+  overflow: hidden;
+  transition: all 0.5s ease; }
+  #sidebar-wrapper h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 4px;
+    padding: 0px; }
+  #sidebar-wrapper a {
+    font-size: 24px;
+    color: white;
+    margin-left: 10px; }
+  #sidebar-wrapper.open {
+    width: 320px; }
+  #sidebar-wrapper .sidebar-links {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #sidebar-wrapper #close-btn {
+    margin-left: 30px;
+    margin-top: 10px;
+    align-self: flex-start;
+    color: white;
+    cursor: pointer; }
+    #sidebar-wrapper #close-btn:hover {
+      opacity: 0.5; }
+    #sidebar-wrapper #close-btn img {
+      height: 30px;
+      width: 30px; }
+
+#hamburger {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 40px;
+  top: 20px;
+  left: 30px;
+  border-radius: 4px;
+  background-color: black;
+  z-index: 1; }
+  #hamburger:hover {
+    background-color: #00CFFF; }
+  #hamburger img {
+    height: 30px;
+    width: 30px; }
 
 /*# sourceMappingURL=main.css.map */
