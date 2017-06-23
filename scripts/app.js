@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 	function getWeather(){
 		$.ajax({
-			url: "http://api.wunderground.com/api/5e460255713ef6c7/geolookup/conditions/q/49445.json",
+			url: "https://api.wunderground.com/api/5e460255713ef6c7/geolookup/conditions/q/49445.json",
 			dataType: "jsonp",
 			success: function(response){
 				var conditions = response.current_observation.weather;
